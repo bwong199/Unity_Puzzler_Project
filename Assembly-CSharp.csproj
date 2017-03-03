@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B3831FFE-8A11-2FF6-DF54-4BCF6E5D6346}</ProjectGuid>
+    <ProjectGuid>{FA9E5AB9-F6F1-2914-DB22-6E1D355CDA12}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
+     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\FPS.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
      <Compile Include="Assets\GoogleVR\Legacy\Scripts\GvrHead.cs" />
      <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrCameraUtils.cs" />
@@ -91,11 +92,16 @@
      <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+     <Compile Include="Assets\Scripts\FollowNpc.cs" />
      <Compile Include="Assets\Scripts\GameLogic.cs" />
+     <Compile Include="Assets\Scripts\RandomMovement.cs" />
+     <Compile Include="Assets\Scripts\RaycastMovement.cs" />
+     <Compile Include="Assets\Scripts\WaypointMovement.cs" />
      <Compile Include="Assets\Scripts\lightUp.cs" />
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
      <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
@@ -119,8 +125,12 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/benwong/Desktop/Unity/Puzzler Starter/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/benwong/Desktop/Unity/Unity_Puzzler_Project/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C7509EB0-C1DD-C811-766B-647E8F168105}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

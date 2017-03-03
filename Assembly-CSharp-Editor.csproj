@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5D0C5BED-3BC6-7FE6-CBBB-72A6E176674E}</ProjectGuid>
+    <ProjectGuid>{53C896D0-C804-5157-A3CC-5BF94FCD35AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -58,6 +58,7 @@
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
      <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
@@ -111,7 +112,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/benwong/Desktop/Unity/Puzzler Starter/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/benwong/Desktop/Unity/Unity_Puzzler_Project/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -124,8 +125,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C7509EB0-C1DD-C811-766B-647E8F168105}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{B3831FFE-8A11-2FF6-DF54-4BCF6E5D6346}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{FA9E5AB9-F6F1-2914-DB22-6E1D355CDA12}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
